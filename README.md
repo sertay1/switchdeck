@@ -3,7 +3,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="romfs/logo_dark.png">
-    <img src="romfs/logo_light.png" alt="SwitchDeck logo" width="160" height="160">
+    <img src="romfs/logo_light.png" alt="SwitchDeck logo" width="250" height="250">
   </picture>
 </p>
 
