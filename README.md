@@ -8,14 +8,15 @@
 </p>
 
 <p align="center">
-  <strong>Turn your Nintendo Switch into a Macro Deck control panel.</strong><br>
-  Nintendo Switch’ini Macro Deck kontrol paneline dönüştür.
+  <strong>Nintendo Switch’ini Stream Deck kontrol paneline dönüştür.</strong><br><br>
+  <strong>Turn your Nintendo Switch into a Stream Deck control panel.</strong>
 </p>
 
 <p align="center">
   <a href="#en-setup-and-usage-guide"><img src="https://img.shields.io/badge/English-2563EB?style=for-the-badge" alt="English guide"></a>
   <a href="#tr-kurulum-ve-kullanim-rehberi"><img src="https://img.shields.io/badge/T%C3%BCrk%C3%A7e-E11D48?style=for-the-badge" alt="Türkçe rehber"></a>
-  <a href="https://github.com/sertay1/switchdeck/releases"><img src="https://img.shields.io/badge/SD%20Package-15803D?style=for-the-badge&logo=github&logoColor=white" alt="Download SD package · SD paketini indir"></a>
+  <a href="https://github.com/sertay1/switchdeck/releases"><img src="https://img.shields.io/badge/Releases-15803D?style=for-the-badge&logo=github&logoColor=white" alt="Releases"></a>
+  <a href="https://hb-app.store/switch/SwitchDeck"><img src="https://img.shields.io/badge/HB%20App%20Store-0F766E?style=for-the-badge" alt="HB App Store"></a>
   <a href="#screenshots"><img src="https://img.shields.io/badge/Screenshots-6D28D9?style=for-the-badge" alt="Screenshots · Ekran görüntüleri"></a>
 </p>
 
@@ -23,47 +24,7 @@
   <img src="docs/images/switchdeck-setup.jpg" alt="Nintendo Switch OLED running SwitchDeck on a gaming desk" width="740">
 </p>
 
-<table align="center">
-  <tr>
-    <th>HB App Store</th>
-    <th>SertAy · Linktree</th>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://hb-app.store/switch/SwitchDeck"><img src="docs/images/hbappstore.png" width="170" alt="Open SwitchDeck in HB App Store"></a></td>
-    <td align="center"><a href="https://linktr.ee/yamanx"><img src="romfs/contact_qr.png" width="100" alt="Scan or open SertAy’s Linktree"></a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://hb-app.store/switch/SwitchDeck">Open in store · Mağazada aç</a></td>
-    <td align="center"><a href="https://linktr.ee/yamanx">All links · Tüm linkler</a></td>
-  </tr>
-</table>
-
----
-
-<a name="screenshots"></a>
-
-## Screenshots · Ekran Görüntüleri
-
-<p align="center">
-  <a href="docs/images/connection-and-server.jpg"><img src="docs/images/connection-and-server.jpg" alt="SwitchDeck connection settings" width="600"></a><br>
-  <strong>Connection &amp; Server · Bağlantı ve Sunucu</strong>
-</p>
-
-<p align="center">
-  <a href="docs/images/appearance-and-theme.jpg"><img src="docs/images/appearance-and-theme.jpg" alt="SwitchDeck appearance and theme settings" width="600"></a><br>
-  <strong>Appearance &amp; Theme · Görünüm ve Tema</strong>
-</p>
-
-<p align="center">
-  <a href="docs/images/about.jpg"><img src="docs/images/about.jpg" alt="SwitchDeck About screen" width="600"></a><br>
-  <strong>About · Hakkında</strong>
-</p>
-
----
-
 <a name="en-setup-and-usage-guide"></a>
-
-## 🇬🇧 English
 
 ### What SwitchDeck does
 
@@ -73,11 +34,35 @@ Open your PC’s **Macro Deck 3** pages on the Switch. Run macros, change tracks
 - **Live widgets** — View album art, weather, clocks, timers, and CPU, GPU, and RAM gauges.
 - **Appearance** — Choose the Macro Deck, Light, or OLED Pure Black theme. Dim or black out the idle screen, or put the console to sleep.
 
+<a name="screenshots"></a>
+
+### Screenshots
+
+<p align="center">
+  <a href="docs/images/connection-and-server.jpg"><img src="docs/images/connection-and-server.jpg" alt="Connection &amp; Server" width="600"></a><br>
+  <strong>Connection &amp; Server</strong>
+</p>
+
+<p align="center">
+  <a href="docs/images/appearance-and-theme.jpg"><img src="docs/images/appearance-and-theme.jpg" alt="Appearance &amp; Theme" width="600"></a><br>
+  <strong>Appearance &amp; Theme</strong>
+</p>
+
+<p align="center">
+  <a href="docs/images/about.jpg"><img src="docs/images/about.jpg" alt="About" width="600"></a><br>
+  <strong>About</strong>
+</p>
+
 ### Installation
 
 You need a Nintendo Switch running CFW with access to the Homebrew Menu and a PC running Macro Deck 3 on the same local network.
 
-1. Open SwitchDeck in the [HB App Store](https://hb-app.store/switch/SwitchDeck) or [download the SD ZIP from GitHub Releases](https://github.com/sertay1/switchdeck/releases).
+<p align="center">
+  <a href="https://hb-app.store/switch/SwitchDeck"><img src="docs/images/hbappstore.png" alt="HB App Store" width="230"></a><br>
+  <a href="https://hb-app.store/switch/SwitchDeck">Open in HB App Store</a>
+</p>
+
+1. For manual installation, [download the SD ZIP from GitHub Releases](https://github.com/sertay1/switchdeck/releases).
 2. If you use the ZIP, copy its `switch` folder to the root of your SD card.
 3. Launch **SwitchDeck** from the Homebrew Menu. The NRO should be at `SD:/switch/SwitchDeck/SwitchDeck.nro`.
 
@@ -112,11 +97,17 @@ Install devkitPro, devkitA64, libnx, and the Switch portlibs listed in the [Make
 
 </details>
 
+### 🔗 Contact and Donate
+
+#### SertAy
+
+| Links | QR Code |
+| :--- | :--- |
+| **All Links:** [My Linktree](https://linktr.ee/yamanx) | <a href="https://linktr.ee/yamanx"><img src="romfs/contact_qr.png" alt="SertAy Linktree QR code" width="120"></a> |
+
 ---
 
 <a name="tr-kurulum-ve-kullanim-rehberi"></a>
-
-## 🇹🇷 Türkçe
 
 ### SwitchDeck ne işe yarar?
 
@@ -126,11 +117,35 @@ Bilgisayarındaki **Macro Deck 3** sayfalarını Switch’te aç. Oyun veya yay�
 - **Canlı widget’lar** — Albüm kapağını, hava durumunu, saati, sayaçları ve CPU, GPU, RAM göstergelerini görüntüle.
 - **Görünüm** — Macro Deck, Açık veya OLED Tam Siyah temasını seç. Boşta ekranı karart, siyaha al veya konsolu uyut.
 
+<a name="ekran-goruntuleri"></a>
+
+### Ekran Görüntüleri
+
+<p align="center">
+  <a href="docs/images/connection-and-server.jpg"><img src="docs/images/connection-and-server.jpg" alt="Bağlantı ve Sunucu" width="600"></a><br>
+  <strong>Bağlantı ve Sunucu</strong>
+</p>
+
+<p align="center">
+  <a href="docs/images/appearance-and-theme.jpg"><img src="docs/images/appearance-and-theme.jpg" alt="Görünüm ve Tema" width="600"></a><br>
+  <strong>Görünüm ve Tema</strong>
+</p>
+
+<p align="center">
+  <a href="docs/images/about.jpg"><img src="docs/images/about.jpg" alt="Hakkında" width="600"></a><br>
+  <strong>Hakkında</strong>
+</p>
+
 ### Kurulum
 
 Homebrew Menu’ye erişebilen CFW’li bir Nintendo Switch ve aynı yerel ağda Macro Deck 3 çalıştıran bir bilgisayar gerekir.
 
-1. SwitchDeck’in sayfasını [HB App Store’da aç](https://hb-app.store/switch/SwitchDeck) veya [GitHub Releases’tan SD ZIP’ini indir](https://github.com/sertay1/switchdeck/releases).
+<p align="center">
+  <a href="https://hb-app.store/switch/SwitchDeck"><img src="docs/images/hbappstore.png" alt="HB App Store" width="230"></a><br>
+  <a href="https://hb-app.store/switch/SwitchDeck">HB App Store’da aç</a>
+</p>
+
+1. Elle kurulum için [GitHub Releases’tan SD ZIP’ini indir](https://github.com/sertay1/switchdeck/releases).
 2. ZIP ile kuruyorsan içindeki `switch` klasörünü SD kartın köküne kopyala.
 3. Homebrew Menu’den **SwitchDeck**’i başlat. NRO’nun yolu `SD:/switch/SwitchDeck/SwitchDeck.nro` olmalı.
 
@@ -164,3 +179,11 @@ Yeni `SwitchDeck.nro` dosyasını `SD:/switch/SwitchDeck/` klasörüne kopyalay�
 devkitPro, devkitA64, libnx ve [Makefile](Makefile)’daki Switch portlibs paketlerini kur. devkitPro kabuğunda `make` komutuyla `SwitchDeck.nro` oluştur. [Test talimatları](tests/README.txt).
 
 </details>
+
+### 🔗 İletişim ve Bağış
+
+#### SertAy
+
+| Linkler | QR Kod |
+| :--- | :--- |
+| **Tüm Linkler:** [Linktree Sayfam](https://linktr.ee/yamanx) | <a href="https://linktr.ee/yamanx"><img src="romfs/contact_qr.png" alt="SertAy Linktree QR kodu" width="120"></a> |
