@@ -1,0 +1,123 @@
+{
+  "tree": {
+    "root": {
+      "id": "clock",
+      "type": "ui.stack",
+      "properties": {
+        "align": "center",
+        "background": "#45c373",
+        "direction": "vertical",
+        "gap": {
+          "basis": 0.03
+        },
+        "justify": "center",
+        "padding": {
+          "basis": 0.1,
+          "maxOfCell": 0.1
+        }
+      },
+      "children": [
+        {
+          "id": "clock.date",
+          "type": "macrodeck.dynamic-text",
+          "properties": {
+            "align": "center",
+            "color": "#000000",
+            "format": "date",
+            "role": "muted",
+            "size": {
+              "basis": 0.08
+            },
+            "value": {
+              "$time": {
+                "zone": "Europe/Istanbul"
+              }
+            },
+            "weight": "medium"
+          },
+          "children": [],
+          "fallback": {
+            "id": "clock.dateFallback",
+            "type": "ui.text",
+            "properties": {
+              "text": ""
+            },
+            "children": []
+          }
+        },
+        {
+          "id": "clock.time",
+          "type": "macrodeck.dynamic-text",
+          "requiredComponentVersion": 2,
+          "properties": {
+            "align": "center",
+            "color": "#000000",
+            "format": "time-24h",
+            "minSize": {
+              "basis": 0.13
+            },
+            "role": "primary",
+            "seconds": false,
+            "size": {
+              "basis": 0.24
+            },
+            "value": {
+              "$time": {
+                "zone": "Europe/Istanbul"
+              }
+            },
+            "weight": "bold"
+          },
+          "children": [],
+          "fallback": {
+            "id": "clock.timeLocalized",
+            "type": "macrodeck.dynamic-text",
+            "properties": {
+              "align": "center",
+              "color": "#000000",
+              "format": "time",
+              "minSize": {
+                "basis": 0.13
+              },
+              "role": "primary",
+              "seconds": false,
+              "size": {
+                "basis": 0.24
+              },
+              "value": {
+                "$time": {
+                  "zone": "Europe/Istanbul"
+                }
+              },
+              "weight": "bold"
+            },
+            "children": [],
+            "fallback": {
+              "id": "clock.timeFallback",
+              "type": "ui.text",
+              "properties": {
+                "align": "center",
+                "maxLines": 3,
+                "minSize": {
+                  "basis": 0.06
+                },
+                "role": "muted",
+                "size": {
+                  "basis": 0.08
+                },
+                "text": {
+                  "$localized": {
+                    "scope": "macrodeck.app",
+                    "key": "Widgets.Clock.UpdateRequired"
+                  }
+                },
+                "weight": "medium"
+              },
+              "children": []
+            }
+          }
+        }
+      ]
+    }
+  }
+}

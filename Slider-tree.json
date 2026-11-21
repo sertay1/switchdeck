@@ -1,0 +1,82 @@
+{
+  "tree": {
+    "root": {
+      "id": "slider",
+      "type": "ui.stack",
+      "properties": {
+        "direction": "vertical",
+        "gap": {
+          "basis": 0.04
+        },
+        "padding": {
+          "basis": 0.1,
+          "maxOfCell": 0.1
+        }
+      },
+      "children": [
+        {
+          "id": "slider.track",
+          "type": "ui.slider",
+          "properties": {
+            "direction": "vertical",
+            "events": [
+              "adjust",
+              "change",
+              "double-press"
+            ],
+            "fill": true,
+            "level": 1,
+            "levelColor": "#22aadc",
+            "step": 0.01,
+            "thickness": {
+              "basis": 0.11,
+              "maxOfCross": 0.35
+            }
+          },
+          "children": [],
+          "fallback": {
+            "id": "slider.trackFallback",
+            "type": "ui.range-bar",
+            "properties": {
+              "end": 1,
+              "endColor": "#22aadc",
+              "start": 0,
+              "startColor": "#22aadc",
+              "thickness": {
+                "basis": 0.11,
+                "maxOfCross": 0.35
+              }
+            },
+            "children": []
+          }
+        },
+        {
+          "id": "slider.value",
+          "type": "ui.text",
+          "properties": {
+            "align": "center",
+            "minSize": {
+              "basis": 0.08
+            },
+            "role": "primary",
+            "size": {
+              "basis": 0.12
+            },
+            "text": {
+              "$localized": {
+                "scope": "macrodeck.app",
+                "key": "Variables.Format.ValueWithUnit",
+                "arguments": {
+                  "unit": "%",
+                  "value": "100"
+                }
+              }
+            },
+            "weight": "semibold"
+          },
+          "children": []
+        }
+      ]
+    }
+  }
+}

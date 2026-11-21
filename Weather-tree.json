@@ -1,0 +1,161 @@
+{
+  "tree": {
+    "root": {
+      "id": "weather",
+      "type": "ui.stack",
+      "properties": {
+        "direction": "vertical",
+        "padding": {
+          "basis": 0.1,
+          "maxOfCell": 0.1
+        }
+      },
+      "children": [
+        {
+          "id": "weather.compact",
+          "type": "ui.stack",
+          "properties": {
+            "align": "start",
+            "direction": "vertical",
+            "fill": true,
+            "justify": "space-between"
+          },
+          "children": [
+            {
+              "id": "weather.compact.top",
+              "type": "ui.stack",
+              "properties": {
+                "align": "start",
+                "direction": "vertical"
+              },
+              "children": [
+                {
+                  "id": "weather.compact.top.location",
+                  "type": "ui.text",
+                  "properties": {
+                    "minSize": {
+                      "basis": 0.06
+                    },
+                    "role": "primary",
+                    "size": {
+                      "basis": 0.09
+                    },
+                    "text": "Istanbul, Republic of Türkiye",
+                    "weight": "semibold"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "weather.compact.top.temp",
+                  "type": "ui.text",
+                  "properties": {
+                    "role": "primary",
+                    "size": {
+                      "basis": 0.3
+                    },
+                    "text": {
+                      "$localized": {
+                        "scope": "macrodeck.app",
+                        "key": "Widgets.Weather.TemperatureValue",
+                        "arguments": {
+                          "value": 15
+                        }
+                      }
+                    },
+                    "weight": "regular"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "weather.compact.bottom",
+              "type": "ui.stack",
+              "properties": {
+                "align": "start",
+                "direction": "vertical",
+                "gap": {
+                  "basis": 0.008
+                }
+              },
+              "children": [
+                {
+                  "id": "weather.compact.bottom.iconRow",
+                  "type": "ui.stack",
+                  "properties": {
+                    "direction": "horizontal",
+                    "justify": "start"
+                  },
+                  "children": [
+                    {
+                      "id": "weather.compact.bottom.iconRow.icon",
+                      "type": "ui.image",
+                      "properties": {
+                        "size": {
+                          "basis": 0.13
+                        },
+                        "source": {
+                          "resourceId": "app.macro-deck.widget-weather.cloudy",
+                          "contentHash": "sha256:4832578f385cf5b7f5e7c54601365b95608f97ea440750c0a43b161530c8f7f4",
+                          "mediaType": "image/svg+xml",
+                          "byteLength": 4736
+                        }
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "weather.compact.bottom.condition",
+                  "type": "ui.text",
+                  "properties": {
+                    "minSize": {
+                      "basis": 0.055
+                    },
+                    "role": "primary",
+                    "size": {
+                      "basis": 0.075
+                    },
+                    "text": {
+                      "$localized": {
+                        "scope": "macrodeck.app",
+                        "key": "Widgets.Weather.Condition.Overcast"
+                      }
+                    },
+                    "weight": "semibold"
+                  },
+                  "children": []
+                },
+                {
+                  "id": "weather.compact.bottom.highLow",
+                  "type": "ui.text",
+                  "properties": {
+                    "minSize": {
+                      "basis": 0.05
+                    },
+                    "role": "primary",
+                    "size": {
+                      "basis": 0.07
+                    },
+                    "text": {
+                      "$localized": {
+                        "scope": "macrodeck.app",
+                        "key": "Widgets.Weather.HighLow",
+                        "arguments": {
+                          "high": 17,
+                          "low": 14
+                        }
+                      }
+                    },
+                    "weight": "medium"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "tree": {
+    "root": {
+      "id": "timer",
+      "type": "ui.stack",
+      "properties": {
+        "events": [
+          "press",
+          "long-press"
+        ],
+        "fill": true
+      },
+      "children": [
+        {
+          "id": "timer.clockLayer",
+          "type": "ui.layer",
+          "properties": {
+            "fill": true
+          },
+          "children": [
+            {
+              "id": "timer.clockLayer.ringFrame",
+              "type": "ui.stack",
+              "properties": {
+                "fill": true,
+                "padding": {
+                  "basis": 0.1,
+                  "maxOfCell": 0.1
+                }
+              },
+              "children": [
+                {
+                  "id": "timer.clockLayer.ringFrame.ring",
+                  "type": "ui.gauge",
+                  "properties": {
+                    "fill": true,
+                    "level": 1,
+                    "thickness": {
+                      "basis": 0.07
+                    }
+                  },
+                  "children": [],
+                  "fallback": {
+                    "id": "timer.clockLayer.ringFrame.ringFallback",
+                    "type": "ui.range-bar",
+                    "properties": {
+                      "end": 1,
+                      "start": 0,
+                      "thickness": {
+                        "basis": 0.05
+                      }
+                    },
+                    "children": []
+                  }
+                }
+              ]
+            },
+            {
+              "id": "timer.clockLayer.readout",
+              "type": "ui.stack",
+              "properties": {
+                "align": "center",
+                "direction": "vertical",
+                "fill": true,
+                "gap": {
+                  "basis": 0.02
+                },
+                "justify": "center",
+                "padding": {
+                  "basis": 0.1,
+                  "maxOfCell": 0.1
+                }
+              },
+              "children": [
+                {
+                  "id": "timer.clockLayer.readout.state",
+                  "type": "ui.icon",
+                  "properties": {
+                    "icon": "play",
+                    "role": "muted",
+                    "size": {
+                      "basis": 0.1
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "id": "timer.clockLayer.readout.time",
+                  "type": "macrodeck.progress-text",
+                  "properties": {
+                    "align": "center",
+                    "format": "remaining",
+                    "minSize": {
+                      "basis": 0.09
+                    },
+                    "role": "primary",
+                    "size": {
+                      "basis": 0.19
+                    },
+                    "value": {
+                      "$progress": {
+                        "positionMs": 0,
+                        "durationMs": 600999,
+                        "rate": 0,
+                        "anchor": "2026-11-21T04:00:54.239Z"
+                      }
+                    },
+                    "weight": "bold"
+                  },
+                  "children": [],
+                  "fallback": {
+                    "id": "timer.clockLayer.readout.timeFallback",
+                    "type": "ui.text",
+                    "properties": {
+                      "align": "center",
+                      "minSize": {
+                        "basis": 0.09
+                      },
+                      "size": {
+                        "basis": 0.19
+                      },
+                      "text": "10:00",
+                      "weight": "bold"
+                    },
+                    "children": []
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

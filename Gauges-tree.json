@@ -1,0 +1,1699 @@
+{
+  "tree": {
+    "root": {
+      "id": "gauges",
+      "type": "ui.stack",
+      "properties": {
+        "align": "start",
+        "direction": "vertical",
+        "gap": {
+          "basis": 0.02,
+          "maxOfCell": 0.025
+        },
+        "padding": {
+          "basis": 0.1,
+          "maxOfCell": 0.1
+        }
+      },
+      "children": [
+        {
+          "id": "gauges.layout",
+          "type": "ui.responsive",
+          "properties": {
+            "fill": true,
+            "variants": [
+              {
+                "maxAspect": 0.46
+              },
+              {
+                "minAspect": 1.04
+              }
+            ]
+          },
+          "children": [
+            {
+              "id": "gauges.layout.c2-grid",
+              "type": "ui.grid",
+              "properties": {
+                "columns": 2,
+                "gap": {
+                  "basis": 0.03310344827586208
+                },
+                "rows": 2
+              },
+              "children": [
+                {
+                  "id": "gauges.layout.c2-grid.g0",
+                  "type": "ui.stack",
+                  "properties": {
+                    "align": "center",
+                    "direction": "vertical",
+                    "justify": "center"
+                  },
+                  "children": [
+                    {
+                      "id": "gauges.layout.c2-grid.g0.dial",
+                      "type": "ui.layer",
+                      "properties": {
+                        "fill": true
+                      },
+                      "children": [
+                        {
+                          "id": "gauges.layout.c2-grid.g0.dial.ring",
+                          "type": "ui.gauge",
+                          "properties": {
+                            "endAngle": 360,
+                            "fill": true,
+                            "level": 0.01,
+                            "startAngle": 0,
+                            "thickness": {
+                              "basis": 0.030344827586206904
+                            }
+                          },
+                          "children": [],
+                          "fallback": {
+                            "id": "gauges.layout.c2-grid.g0.dial.ringFallback",
+                            "type": "ui.range-bar",
+                            "properties": {
+                              "end": 0.01,
+                              "start": 0,
+                              "thickness": {
+                                "basis": 0.013793103448275865
+                              }
+                            },
+                            "children": []
+                          }
+                        },
+                        {
+                          "id": "gauges.layout.c2-grid.g0.dial.centre",
+                          "type": "ui.stack",
+                          "properties": {
+                            "align": "center",
+                            "direction": "horizontal",
+                            "justify": "center"
+                          },
+                          "children": [
+                            {
+                              "id": "gauges.layout.c2-grid.g0.dial.centre.icon",
+                              "type": "ui.image",
+                              "properties": {
+                                "size": {
+                                  "basis": 0.09931034482758622,
+                                  "maxOfCross": 0.36
+                                },
+                                "source": {
+                                  "resourceId": "app.macro-deck.widget-icon.icon-pack.8b325abe-ff43-5ac1-8eca-c1ad9667e540",
+                                  "contentHash": "sha256:86e59f67972c3092795a54456b86aa79ce638d35df56368235a9efb5f261ceb5",
+                                  "mediaType": "image/png",
+                                  "byteLength": 14445
+                                }
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gauges.layout.c2-grid.g0.reading",
+                      "type": "ui.stack",
+                      "properties": {
+                        "align": "baseline",
+                        "direction": "horizontal",
+                        "gap": {
+                          "basis": 0.00413793103448276
+                        },
+                        "justify": "center"
+                      },
+                      "children": [
+                        {
+                          "id": "gauges.layout.c2-grid.g0.reading.value",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "primary",
+                            "size": {
+                              "basis": 0.06896551724137932,
+                              "maxOfCell": 0.14166666666666666
+                            },
+                            "text": "1",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        },
+                        {
+                          "id": "gauges.layout.c2-grid.g0.reading.unit",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "secondary",
+                            "size": {
+                              "basis": 0.046896551724137946,
+                              "maxOfCell": 0.1
+                            },
+                            "text": "%",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gauges.layout.c2-grid.g0.name",
+                      "type": "ui.text",
+                      "properties": {
+                        "align": "center",
+                        "maxLines": 1,
+                        "role": "muted",
+                        "size": {
+                          "basis": 0.05517241379310346,
+                          "maxOfCross": 0.3,
+                          "maxOfCell": 0.1
+                        },
+                        "text": "GPU"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "gauges.layout.c2-grid.g1",
+                  "type": "ui.stack",
+                  "properties": {
+                    "align": "center",
+                    "direction": "vertical",
+                    "justify": "center"
+                  },
+                  "children": [
+                    {
+                      "id": "gauges.layout.c2-grid.g1.dial",
+                      "type": "ui.layer",
+                      "properties": {
+                        "fill": true
+                      },
+                      "children": [
+                        {
+                          "id": "gauges.layout.c2-grid.g1.dial.ring",
+                          "type": "ui.gauge",
+                          "properties": {
+                            "endAngle": 360,
+                            "fill": true,
+                            "level": 0.19,
+                            "startAngle": 0,
+                            "thickness": {
+                              "basis": 0.030344827586206904
+                            }
+                          },
+                          "children": [],
+                          "fallback": {
+                            "id": "gauges.layout.c2-grid.g1.dial.ringFallback",
+                            "type": "ui.range-bar",
+                            "properties": {
+                              "end": 0.19,
+                              "start": 0,
+                              "thickness": {
+                                "basis": 0.013793103448275865
+                              }
+                            },
+                            "children": []
+                          }
+                        },
+                        {
+                          "id": "gauges.layout.c2-grid.g1.dial.centre",
+                          "type": "ui.stack",
+                          "properties": {
+                            "align": "center",
+                            "direction": "horizontal",
+                            "justify": "center"
+                          },
+                          "children": [
+                            {
+                              "id": "gauges.layout.c2-grid.g1.dial.centre.icon",
+                              "type": "ui.image",
+                              "properties": {
+                                "size": {
+                                  "basis": 0.09931034482758622,
+                                  "maxOfCross": 0.36
+                                },
+                                "source": {
+                                  "resourceId": "app.macro-deck.widget-icon.icon-pack.6fae686f-c1a2-5c5e-a05e-276091432601",
+                                  "contentHash": "sha256:d80e9bbec7e3c68166051bf04efc2a9a7b654a7180609bf433353eea0a135dc9",
+                                  "mediaType": "image/png",
+                                  "byteLength": 16211
+                                }
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gauges.layout.c2-grid.g1.reading",
+                      "type": "ui.stack",
+                      "properties": {
+                        "align": "baseline",
+                        "direction": "horizontal",
+                        "gap": {
+                          "basis": 0.00413793103448276
+                        },
+                        "justify": "center"
+                      },
+                      "children": [
+                        {
+                          "id": "gauges.layout.c2-grid.g1.reading.value",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "primary",
+                            "size": {
+                              "basis": 0.06896551724137932,
+                              "maxOfCell": 0.14166666666666666
+                            },
+                            "text": "19",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        },
+                        {
+                          "id": "gauges.layout.c2-grid.g1.reading.unit",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "secondary",
+                            "size": {
+                              "basis": 0.046896551724137946,
+                              "maxOfCell": 0.1
+                            },
+                            "text": "%",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gauges.layout.c2-grid.g1.name",
+                      "type": "ui.text",
+                      "properties": {
+                        "align": "center",
+                        "maxLines": 1,
+                        "role": "muted",
+                        "size": {
+                          "basis": 0.05517241379310346,
+                          "maxOfCross": 0.3,
+                          "maxOfCell": 0.1
+                        },
+                        "text": "CPU"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "gauges.layout.c2-grid.g2",
+                  "type": "ui.stack",
+                  "properties": {
+                    "align": "center",
+                    "direction": "vertical",
+                    "justify": "center"
+                  },
+                  "children": [
+                    {
+                      "id": "gauges.layout.c2-grid.g2.dial",
+                      "type": "ui.layer",
+                      "properties": {
+                        "fill": true
+                      },
+                      "children": [
+                        {
+                          "id": "gauges.layout.c2-grid.g2.dial.ring",
+                          "type": "ui.gauge",
+                          "properties": {
+                            "endAngle": 360,
+                            "fill": true,
+                            "level": 0.84,
+                            "startAngle": 0,
+                            "thickness": {
+                              "basis": 0.030344827586206904
+                            }
+                          },
+                          "children": [],
+                          "fallback": {
+                            "id": "gauges.layout.c2-grid.g2.dial.ringFallback",
+                            "type": "ui.range-bar",
+                            "properties": {
+                              "end": 0.84,
+                              "start": 0,
+                              "thickness": {
+                                "basis": 0.013793103448275865
+                              }
+                            },
+                            "children": []
+                          }
+                        },
+                        {
+                          "id": "gauges.layout.c2-grid.g2.dial.centre",
+                          "type": "ui.stack",
+                          "properties": {
+                            "align": "center",
+                            "direction": "horizontal",
+                            "justify": "center"
+                          },
+                          "children": [
+                            {
+                              "id": "gauges.layout.c2-grid.g2.dial.centre.icon",
+                              "type": "ui.image",
+                              "properties": {
+                                "size": {
+                                  "basis": 0.09931034482758622,
+                                  "maxOfCross": 0.36
+                                },
+                                "source": {
+                                  "resourceId": "app.macro-deck.widget-icon.icon-pack.02d63447-0268-5863-b6c0-b07eac11022c",
+                                  "contentHash": "sha256:516e05d4a994e42bd730622e380f5d82e953989895c205b8db22767f48209034",
+                                  "mediaType": "image/png",
+                                  "byteLength": 13155
+                                }
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gauges.layout.c2-grid.g2.reading",
+                      "type": "ui.stack",
+                      "properties": {
+                        "align": "baseline",
+                        "direction": "horizontal",
+                        "gap": {
+                          "basis": 0.00413793103448276
+                        },
+                        "justify": "center"
+                      },
+                      "children": [
+                        {
+                          "id": "gauges.layout.c2-grid.g2.reading.value",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "primary",
+                            "size": {
+                              "basis": 0.06896551724137932,
+                              "maxOfCell": 0.14166666666666666
+                            },
+                            "text": "84",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        },
+                        {
+                          "id": "gauges.layout.c2-grid.g2.reading.unit",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "secondary",
+                            "size": {
+                              "basis": 0.046896551724137946,
+                              "maxOfCell": 0.1
+                            },
+                            "text": "%",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gauges.layout.c2-grid.g2.name",
+                      "type": "ui.text",
+                      "properties": {
+                        "align": "center",
+                        "maxLines": 1,
+                        "role": "muted",
+                        "size": {
+                          "basis": 0.05517241379310346,
+                          "maxOfCross": 0.3,
+                          "maxOfCell": 0.1
+                        },
+                        "text": "RAM"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gauges.layout.c1-grid",
+              "type": "ui.grid",
+              "properties": {
+                "columns": 1,
+                "gap": {
+                  "basis": 0.05254515599343186
+                },
+                "rows": 3
+              },
+              "children": [
+                {
+                  "id": "gauges.layout.c1-grid.g0",
+                  "type": "ui.stack",
+                  "properties": {
+                    "align": "center",
+                    "direction": "vertical",
+                    "justify": "center"
+                  },
+                  "children": [
+                    {
+                      "id": "gauges.layout.c1-grid.g0.dial",
+                      "type": "ui.layer",
+                      "properties": {
+                        "fill": true
+                      },
+                      "children": [
+                        {
+                          "id": "gauges.layout.c1-grid.g0.dial.ring",
+                          "type": "ui.gauge",
+                          "properties": {
+                            "endAngle": 360,
+                            "fill": true,
+                            "level": 0.01,
+                            "startAngle": 0,
+                            "thickness": {
+                              "basis": 0.04816639299397921
+                            }
+                          },
+                          "children": [],
+                          "fallback": {
+                            "id": "gauges.layout.c1-grid.g0.dial.ringFallback",
+                            "type": "ui.range-bar",
+                            "properties": {
+                              "end": 0.01,
+                              "start": 0,
+                              "thickness": {
+                                "basis": 0.021893814997263276
+                              }
+                            },
+                            "children": []
+                          }
+                        },
+                        {
+                          "id": "gauges.layout.c1-grid.g0.dial.centre",
+                          "type": "ui.stack",
+                          "properties": {
+                            "align": "center",
+                            "direction": "horizontal",
+                            "justify": "center"
+                          },
+                          "children": [
+                            {
+                              "id": "gauges.layout.c1-grid.g0.dial.centre.icon",
+                              "type": "ui.image",
+                              "properties": {
+                                "size": {
+                                  "basis": 0.15763546798029557,
+                                  "maxOfCross": 0.36
+                                },
+                                "source": {
+                                  "resourceId": "app.macro-deck.widget-icon.icon-pack.8b325abe-ff43-5ac1-8eca-c1ad9667e540",
+                                  "contentHash": "sha256:86e59f67972c3092795a54456b86aa79ce638d35df56368235a9efb5f261ceb5",
+                                  "mediaType": "image/png",
+                                  "byteLength": 14445
+                                }
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gauges.layout.c1-grid.g0.reading",
+                      "type": "ui.stack",
+                      "properties": {
+                        "align": "baseline",
+                        "direction": "horizontal",
+                        "gap": {
+                          "basis": 0.006568144499178983
+                        },
+                        "justify": "center"
+                      },
+                      "children": [
+                        {
+                          "id": "gauges.layout.c1-grid.g0.reading.value",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "primary",
+                            "size": {
+                              "basis": 0.10946907498631638,
+                              "maxOfCell": 0.14166666666666666
+                            },
+                            "text": "1",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        },
+                        {
+                          "id": "gauges.layout.c1-grid.g0.reading.unit",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "secondary",
+                            "size": {
+                              "basis": 0.07443897099069514,
+                              "maxOfCell": 0.1
+                            },
+                            "text": "%",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gauges.layout.c1-grid.g0.name",
+                      "type": "ui.text",
+                      "properties": {
+                        "align": "center",
+                        "maxLines": 1,
+                        "role": "muted",
+                        "size": {
+                          "basis": 0.0875752599890531,
+                          "maxOfCross": 0.3,
+                          "maxOfCell": 0.1
+                        },
+                        "text": "GPU"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "gauges.layout.c1-grid.g1",
+                  "type": "ui.stack",
+                  "properties": {
+                    "align": "center",
+                    "direction": "vertical",
+                    "justify": "center"
+                  },
+                  "children": [
+                    {
+                      "id": "gauges.layout.c1-grid.g1.dial",
+                      "type": "ui.layer",
+                      "properties": {
+                        "fill": true
+                      },
+                      "children": [
+                        {
+                          "id": "gauges.layout.c1-grid.g1.dial.ring",
+                          "type": "ui.gauge",
+                          "properties": {
+                            "endAngle": 360,
+                            "fill": true,
+                            "level": 0.19,
+                            "startAngle": 0,
+                            "thickness": {
+                              "basis": 0.04816639299397921
+                            }
+                          },
+                          "children": [],
+                          "fallback": {
+                            "id": "gauges.layout.c1-grid.g1.dial.ringFallback",
+                            "type": "ui.range-bar",
+                            "properties": {
+                              "end": 0.19,
+                              "start": 0,
+                              "thickness": {
+                                "basis": 0.021893814997263276
+                              }
+                            },
+                            "children": []
+                          }
+                        },
+                        {
+                          "id": "gauges.layout.c1-grid.g1.dial.centre",
+                          "type": "ui.stack",
+                          "properties": {
+                            "align": "center",
+                            "direction": "horizontal",
+                            "justify": "center"
+                          },
+                          "children": [
+                            {
+                              "id": "gauges.layout.c1-grid.g1.dial.centre.icon",
+                              "type": "ui.image",
+                              "properties": {
+                                "size": {
+                                  "basis": 0.15763546798029557,
+                                  "maxOfCross": 0.36
+                                },
+                                "source": {
+                                  "resourceId": "app.macro-deck.widget-icon.icon-pack.6fae686f-c1a2-5c5e-a05e-276091432601",
+                                  "contentHash": "sha256:d80e9bbec7e3c68166051bf04efc2a9a7b654a7180609bf433353eea0a135dc9",
+                                  "mediaType": "image/png",
+                                  "byteLength": 16211
+                                }
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gauges.layout.c1-grid.g1.reading",
+                      "type": "ui.stack",
+                      "properties": {
+                        "align": "baseline",
+                        "direction": "horizontal",
+                        "gap": {
+                          "basis": 0.006568144499178983
+                        },
+                        "justify": "center"
+                      },
+                      "children": [
+                        {
+                          "id": "gauges.layout.c1-grid.g1.reading.value",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "primary",
+                            "size": {
+                              "basis": 0.10946907498631638,
+                              "maxOfCell": 0.14166666666666666
+                            },
+                            "text": "19",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        },
+                        {
+                          "id": "gauges.layout.c1-grid.g1.reading.unit",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "secondary",
+                            "size": {
+                              "basis": 0.07443897099069514,
+                              "maxOfCell": 0.1
+                            },
+                            "text": "%",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gauges.layout.c1-grid.g1.name",
+                      "type": "ui.text",
+                      "properties": {
+                        "align": "center",
+                        "maxLines": 1,
+                        "role": "muted",
+                        "size": {
+                          "basis": 0.0875752599890531,
+                          "maxOfCross": 0.3,
+                          "maxOfCell": 0.1
+                        },
+                        "text": "CPU"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "gauges.layout.c1-grid.g2",
+                  "type": "ui.stack",
+                  "properties": {
+                    "align": "center",
+                    "direction": "vertical",
+                    "justify": "center"
+                  },
+                  "children": [
+                    {
+                      "id": "gauges.layout.c1-grid.g2.dial",
+                      "type": "ui.layer",
+                      "properties": {
+                        "fill": true
+                      },
+                      "children": [
+                        {
+                          "id": "gauges.layout.c1-grid.g2.dial.ring",
+                          "type": "ui.gauge",
+                          "properties": {
+                            "endAngle": 360,
+                            "fill": true,
+                            "level": 0.84,
+                            "startAngle": 0,
+                            "thickness": {
+                              "basis": 0.04816639299397921
+                            }
+                          },
+                          "children": [],
+                          "fallback": {
+                            "id": "gauges.layout.c1-grid.g2.dial.ringFallback",
+                            "type": "ui.range-bar",
+                            "properties": {
+                              "end": 0.84,
+                              "start": 0,
+                              "thickness": {
+                                "basis": 0.021893814997263276
+                              }
+                            },
+                            "children": []
+                          }
+                        },
+                        {
+                          "id": "gauges.layout.c1-grid.g2.dial.centre",
+                          "type": "ui.stack",
+                          "properties": {
+                            "align": "center",
+                            "direction": "horizontal",
+                            "justify": "center"
+                          },
+                          "children": [
+                            {
+                              "id": "gauges.layout.c1-grid.g2.dial.centre.icon",
+                              "type": "ui.image",
+                              "properties": {
+                                "size": {
+                                  "basis": 0.15763546798029557,
+                                  "maxOfCross": 0.36
+                                },
+                                "source": {
+                                  "resourceId": "app.macro-deck.widget-icon.icon-pack.02d63447-0268-5863-b6c0-b07eac11022c",
+                                  "contentHash": "sha256:516e05d4a994e42bd730622e380f5d82e953989895c205b8db22767f48209034",
+                                  "mediaType": "image/png",
+                                  "byteLength": 13155
+                                }
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gauges.layout.c1-grid.g2.reading",
+                      "type": "ui.stack",
+                      "properties": {
+                        "align": "baseline",
+                        "direction": "horizontal",
+                        "gap": {
+                          "basis": 0.006568144499178983
+                        },
+                        "justify": "center"
+                      },
+                      "children": [
+                        {
+                          "id": "gauges.layout.c1-grid.g2.reading.value",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "primary",
+                            "size": {
+                              "basis": 0.10946907498631638,
+                              "maxOfCell": 0.14166666666666666
+                            },
+                            "text": "84",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        },
+                        {
+                          "id": "gauges.layout.c1-grid.g2.reading.unit",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "secondary",
+                            "size": {
+                              "basis": 0.07443897099069514,
+                              "maxOfCell": 0.1
+                            },
+                            "text": "%",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gauges.layout.c1-grid.g2.name",
+                      "type": "ui.text",
+                      "properties": {
+                        "align": "center",
+                        "maxLines": 1,
+                        "role": "muted",
+                        "size": {
+                          "basis": 0.0875752599890531,
+                          "maxOfCross": 0.3,
+                          "maxOfCell": 0.1
+                        },
+                        "text": "RAM"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gauges.layout.c3-grid",
+              "type": "ui.grid",
+              "properties": {
+                "columns": 3,
+                "gap": {
+                  "basis": 0.06620689655172415
+                },
+                "rows": 1
+              },
+              "children": [
+                {
+                  "id": "gauges.layout.c3-grid.g0",
+                  "type": "ui.stack",
+                  "properties": {
+                    "align": "center",
+                    "direction": "vertical",
+                    "justify": "center"
+                  },
+                  "children": [
+                    {
+                      "id": "gauges.layout.c3-grid.g0.dial",
+                      "type": "ui.layer",
+                      "properties": {
+                        "fill": true
+                      },
+                      "children": [
+                        {
+                          "id": "gauges.layout.c3-grid.g0.dial.ring",
+                          "type": "ui.gauge",
+                          "properties": {
+                            "endAngle": 360,
+                            "fill": true,
+                            "level": 0.01,
+                            "startAngle": 0,
+                            "thickness": {
+                              "basis": 0.06068965517241381
+                            }
+                          },
+                          "children": [],
+                          "fallback": {
+                            "id": "gauges.layout.c3-grid.g0.dial.ringFallback",
+                            "type": "ui.range-bar",
+                            "properties": {
+                              "end": 0.01,
+                              "start": 0,
+                              "thickness": {
+                                "basis": 0.02758620689655173
+                              }
+                            },
+                            "children": []
+                          }
+                        },
+                        {
+                          "id": "gauges.layout.c3-grid.g0.dial.centre",
+                          "type": "ui.stack",
+                          "properties": {
+                            "align": "center",
+                            "direction": "horizontal",
+                            "justify": "center"
+                          },
+                          "children": [
+                            {
+                              "id": "gauges.layout.c3-grid.g0.dial.centre.icon",
+                              "type": "ui.image",
+                              "properties": {
+                                "size": {
+                                  "basis": 0.19862068965517243,
+                                  "maxOfCross": 0.36
+                                },
+                                "source": {
+                                  "resourceId": "app.macro-deck.widget-icon.icon-pack.8b325abe-ff43-5ac1-8eca-c1ad9667e540",
+                                  "contentHash": "sha256:86e59f67972c3092795a54456b86aa79ce638d35df56368235a9efb5f261ceb5",
+                                  "mediaType": "image/png",
+                                  "byteLength": 14445
+                                }
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gauges.layout.c3-grid.g0.reading",
+                      "type": "ui.stack",
+                      "properties": {
+                        "align": "baseline",
+                        "direction": "horizontal",
+                        "gap": {
+                          "basis": 0.00827586206896552
+                        },
+                        "justify": "center"
+                      },
+                      "children": [
+                        {
+                          "id": "gauges.layout.c3-grid.g0.reading.value",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "primary",
+                            "size": {
+                              "basis": 0.13793103448275865,
+                              "maxOfCell": 0.14166666666666666
+                            },
+                            "text": "1",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        },
+                        {
+                          "id": "gauges.layout.c3-grid.g0.reading.unit",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "secondary",
+                            "size": {
+                              "basis": 0.09379310344827589,
+                              "maxOfCell": 0.1
+                            },
+                            "text": "%",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gauges.layout.c3-grid.g0.name",
+                      "type": "ui.text",
+                      "properties": {
+                        "align": "center",
+                        "maxLines": 1,
+                        "role": "muted",
+                        "size": {
+                          "basis": 0.11034482758620692,
+                          "maxOfCross": 0.3,
+                          "maxOfCell": 0.1
+                        },
+                        "text": "GPU"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "gauges.layout.c3-grid.g1",
+                  "type": "ui.stack",
+                  "properties": {
+                    "align": "center",
+                    "direction": "vertical",
+                    "justify": "center"
+                  },
+                  "children": [
+                    {
+                      "id": "gauges.layout.c3-grid.g1.dial",
+                      "type": "ui.layer",
+                      "properties": {
+                        "fill": true
+                      },
+                      "children": [
+                        {
+                          "id": "gauges.layout.c3-grid.g1.dial.ring",
+                          "type": "ui.gauge",
+                          "properties": {
+                            "endAngle": 360,
+                            "fill": true,
+                            "level": 0.19,
+                            "startAngle": 0,
+                            "thickness": {
+                              "basis": 0.06068965517241381
+                            }
+                          },
+                          "children": [],
+                          "fallback": {
+                            "id": "gauges.layout.c3-grid.g1.dial.ringFallback",
+                            "type": "ui.range-bar",
+                            "properties": {
+                              "end": 0.19,
+                              "start": 0,
+                              "thickness": {
+                                "basis": 0.02758620689655173
+                              }
+                            },
+                            "children": []
+                          }
+                        },
+                        {
+                          "id": "gauges.layout.c3-grid.g1.dial.centre",
+                          "type": "ui.stack",
+                          "properties": {
+                            "align": "center",
+                            "direction": "horizontal",
+                            "justify": "center"
+                          },
+                          "children": [
+                            {
+                              "id": "gauges.layout.c3-grid.g1.dial.centre.icon",
+                              "type": "ui.image",
+                              "properties": {
+                                "size": {
+                                  "basis": 0.19862068965517243,
+                                  "maxOfCross": 0.36
+                                },
+                                "source": {
+                                  "resourceId": "app.macro-deck.widget-icon.icon-pack.6fae686f-c1a2-5c5e-a05e-276091432601",
+                                  "contentHash": "sha256:d80e9bbec7e3c68166051bf04efc2a9a7b654a7180609bf433353eea0a135dc9",
+                                  "mediaType": "image/png",
+                                  "byteLength": 16211
+                                }
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gauges.layout.c3-grid.g1.reading",
+                      "type": "ui.stack",
+                      "properties": {
+                        "align": "baseline",
+                        "direction": "horizontal",
+                        "gap": {
+                          "basis": 0.00827586206896552
+                        },
+                        "justify": "center"
+                      },
+                      "children": [
+                        {
+                          "id": "gauges.layout.c3-grid.g1.reading.value",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "primary",
+                            "size": {
+                              "basis": 0.13793103448275865,
+                              "maxOfCell": 0.14166666666666666
+                            },
+                            "text": "19",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        },
+                        {
+                          "id": "gauges.layout.c3-grid.g1.reading.unit",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "secondary",
+                            "size": {
+                              "basis": 0.09379310344827589,
+                              "maxOfCell": 0.1
+                            },
+                            "text": "%",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gauges.layout.c3-grid.g1.name",
+                      "type": "ui.text",
+                      "properties": {
+                        "align": "center",
+                        "maxLines": 1,
+                        "role": "muted",
+                        "size": {
+                          "basis": 0.11034482758620692,
+                          "maxOfCross": 0.3,
+                          "maxOfCell": 0.1
+                        },
+                        "text": "CPU"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "gauges.layout.c3-grid.g2",
+                  "type": "ui.stack",
+                  "properties": {
+                    "align": "center",
+                    "direction": "vertical",
+                    "justify": "center"
+                  },
+                  "children": [
+                    {
+                      "id": "gauges.layout.c3-grid.g2.dial",
+                      "type": "ui.layer",
+                      "properties": {
+                        "fill": true
+                      },
+                      "children": [
+                        {
+                          "id": "gauges.layout.c3-grid.g2.dial.ring",
+                          "type": "ui.gauge",
+                          "properties": {
+                            "endAngle": 360,
+                            "fill": true,
+                            "level": 0.84,
+                            "startAngle": 0,
+                            "thickness": {
+                              "basis": 0.06068965517241381
+                            }
+                          },
+                          "children": [],
+                          "fallback": {
+                            "id": "gauges.layout.c3-grid.g2.dial.ringFallback",
+                            "type": "ui.range-bar",
+                            "properties": {
+                              "end": 0.84,
+                              "start": 0,
+                              "thickness": {
+                                "basis": 0.02758620689655173
+                              }
+                            },
+                            "children": []
+                          }
+                        },
+                        {
+                          "id": "gauges.layout.c3-grid.g2.dial.centre",
+                          "type": "ui.stack",
+                          "properties": {
+                            "align": "center",
+                            "direction": "horizontal",
+                            "justify": "center"
+                          },
+                          "children": [
+                            {
+                              "id": "gauges.layout.c3-grid.g2.dial.centre.icon",
+                              "type": "ui.image",
+                              "properties": {
+                                "size": {
+                                  "basis": 0.19862068965517243,
+                                  "maxOfCross": 0.36
+                                },
+                                "source": {
+                                  "resourceId": "app.macro-deck.widget-icon.icon-pack.02d63447-0268-5863-b6c0-b07eac11022c",
+                                  "contentHash": "sha256:516e05d4a994e42bd730622e380f5d82e953989895c205b8db22767f48209034",
+                                  "mediaType": "image/png",
+                                  "byteLength": 13155
+                                }
+                              },
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gauges.layout.c3-grid.g2.reading",
+                      "type": "ui.stack",
+                      "properties": {
+                        "align": "baseline",
+                        "direction": "horizontal",
+                        "gap": {
+                          "basis": 0.00827586206896552
+                        },
+                        "justify": "center"
+                      },
+                      "children": [
+                        {
+                          "id": "gauges.layout.c3-grid.g2.reading.value",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "primary",
+                            "size": {
+                              "basis": 0.13793103448275865,
+                              "maxOfCell": 0.14166666666666666
+                            },
+                            "text": "84",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        },
+                        {
+                          "id": "gauges.layout.c3-grid.g2.reading.unit",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "secondary",
+                            "size": {
+                              "basis": 0.09379310344827589,
+                              "maxOfCell": 0.1
+                            },
+                            "text": "%",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gauges.layout.c3-grid.g2.name",
+                      "type": "ui.text",
+                      "properties": {
+                        "align": "center",
+                        "maxLines": 1,
+                        "role": "muted",
+                        "size": {
+                          "basis": 0.11034482758620692,
+                          "maxOfCross": 0.3,
+                          "maxOfCell": 0.1
+                        },
+                        "text": "RAM"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "fallback": {
+            "id": "gauges.layout._fallback.c2-grid",
+            "type": "ui.grid",
+            "properties": {
+              "columns": 2,
+              "gap": {
+                "basis": 0.03310344827586208
+              },
+              "rows": 2
+            },
+            "children": [
+              {
+                "id": "gauges.layout._fallback.c2-grid.g0",
+                "type": "ui.stack",
+                "properties": {
+                  "align": "center",
+                  "direction": "vertical",
+                  "justify": "center"
+                },
+                "children": [
+                  {
+                    "id": "gauges.layout._fallback.c2-grid.g0.dial",
+                    "type": "ui.layer",
+                    "properties": {
+                      "fill": true
+                    },
+                    "children": [
+                      {
+                        "id": "gauges.layout._fallback.c2-grid.g0.dial.ring",
+                        "type": "ui.gauge",
+                        "properties": {
+                          "endAngle": 360,
+                          "fill": true,
+                          "level": 0.01,
+                          "startAngle": 0,
+                          "thickness": {
+                            "basis": 0.030344827586206904
+                          }
+                        },
+                        "children": [],
+                        "fallback": {
+                          "id": "gauges.layout._fallback.c2-grid.g0.dial.ringFallback",
+                          "type": "ui.range-bar",
+                          "properties": {
+                            "end": 0.01,
+                            "start": 0,
+                            "thickness": {
+                              "basis": 0.013793103448275865
+                            }
+                          },
+                          "children": []
+                        }
+                      },
+                      {
+                        "id": "gauges.layout._fallback.c2-grid.g0.dial.centre",
+                        "type": "ui.stack",
+                        "properties": {
+                          "align": "center",
+                          "direction": "horizontal",
+                          "justify": "center"
+                        },
+                        "children": [
+                          {
+                            "id": "gauges.layout._fallback.c2-grid.g0.dial.centre.icon",
+                            "type": "ui.image",
+                            "properties": {
+                              "size": {
+                                "basis": 0.09931034482758622,
+                                "maxOfCross": 0.36
+                              },
+                              "source": {
+                                "resourceId": "app.macro-deck.widget-icon.icon-pack.8b325abe-ff43-5ac1-8eca-c1ad9667e540",
+                                "contentHash": "sha256:86e59f67972c3092795a54456b86aa79ce638d35df56368235a9efb5f261ceb5",
+                                "mediaType": "image/png",
+                                "byteLength": 14445
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "gauges.layout._fallback.c2-grid.g0.reading",
+                    "type": "ui.stack",
+                    "properties": {
+                      "align": "baseline",
+                      "direction": "horizontal",
+                      "gap": {
+                        "basis": 0.00413793103448276
+                      },
+                      "justify": "center"
+                    },
+                    "children": [
+                      {
+                        "id": "gauges.layout._fallback.c2-grid.g0.reading.value",
+                        "type": "ui.text",
+                        "properties": {
+                          "maxLines": 1,
+                          "role": "primary",
+                          "size": {
+                            "basis": 0.06896551724137932,
+                            "maxOfCell": 0.14166666666666666
+                          },
+                          "text": "1",
+                          "weight": "semibold"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "gauges.layout._fallback.c2-grid.g0.reading.unit",
+                        "type": "ui.text",
+                        "properties": {
+                          "maxLines": 1,
+                          "role": "secondary",
+                          "size": {
+                            "basis": 0.046896551724137946,
+                            "maxOfCell": 0.1
+                          },
+                          "text": "%",
+                          "weight": "semibold"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "gauges.layout._fallback.c2-grid.g0.name",
+                    "type": "ui.text",
+                    "properties": {
+                      "align": "center",
+                      "maxLines": 1,
+                      "role": "muted",
+                      "size": {
+                        "basis": 0.05517241379310346,
+                        "maxOfCross": 0.3,
+                        "maxOfCell": 0.1
+                      },
+                      "text": "GPU"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "gauges.layout._fallback.c2-grid.g1",
+                "type": "ui.stack",
+                "properties": {
+                  "align": "center",
+                  "direction": "vertical",
+                  "justify": "center"
+                },
+                "children": [
+                  {
+                    "id": "gauges.layout._fallback.c2-grid.g1.dial",
+                    "type": "ui.layer",
+                    "properties": {
+                      "fill": true
+                    },
+                    "children": [
+                      {
+                        "id": "gauges.layout._fallback.c2-grid.g1.dial.ring",
+                        "type": "ui.gauge",
+                        "properties": {
+                          "endAngle": 360,
+                          "fill": true,
+                          "level": 0.19,
+                          "startAngle": 0,
+                          "thickness": {
+                            "basis": 0.030344827586206904
+                          }
+                        },
+                        "children": [],
+                        "fallback": {
+                          "id": "gauges.layout._fallback.c2-grid.g1.dial.ringFallback",
+                          "type": "ui.range-bar",
+                          "properties": {
+                            "end": 0.19,
+                            "start": 0,
+                            "thickness": {
+                              "basis": 0.013793103448275865
+                            }
+                          },
+                          "children": []
+                        }
+                      },
+                      {
+                        "id": "gauges.layout._fallback.c2-grid.g1.dial.centre",
+                        "type": "ui.stack",
+                        "properties": {
+                          "align": "center",
+                          "direction": "horizontal",
+                          "justify": "center"
+                        },
+                        "children": [
+                          {
+                            "id": "gauges.layout._fallback.c2-grid.g1.dial.centre.icon",
+                            "type": "ui.image",
+                            "properties": {
+                              "size": {
+                                "basis": 0.09931034482758622,
+                                "maxOfCross": 0.36
+                              },
+                              "source": {
+                                "resourceId": "app.macro-deck.widget-icon.icon-pack.6fae686f-c1a2-5c5e-a05e-276091432601",
+                                "contentHash": "sha256:d80e9bbec7e3c68166051bf04efc2a9a7b654a7180609bf433353eea0a135dc9",
+                                "mediaType": "image/png",
+                                "byteLength": 16211
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "gauges.layout._fallback.c2-grid.g1.reading",
+                    "type": "ui.stack",
+                    "properties": {
+                      "align": "baseline",
+                      "direction": "horizontal",
+                      "gap": {
+                        "basis": 0.00413793103448276
+                      },
+                      "justify": "center"
+                    },
+                    "children": [
+                      {
+                        "id": "gauges.layout._fallback.c2-grid.g1.reading.value",
+                        "type": "ui.text",
+                        "properties": {
+                          "maxLines": 1,
+                          "role": "primary",
+                          "size": {
+                            "basis": 0.06896551724137932,
+                            "maxOfCell": 0.14166666666666666
+                          },
+                          "text": "19",
+                          "weight": "semibold"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "gauges.layout._fallback.c2-grid.g1.reading.unit",
+                        "type": "ui.text",
+                        "properties": {
+                          "maxLines": 1,
+                          "role": "secondary",
+                          "size": {
+                            "basis": 0.046896551724137946,
+                            "maxOfCell": 0.1
+                          },
+                          "text": "%",
+                          "weight": "semibold"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "gauges.layout._fallback.c2-grid.g1.name",
+                    "type": "ui.text",
+                    "properties": {
+                      "align": "center",
+                      "maxLines": 1,
+                      "role": "muted",
+                      "size": {
+                        "basis": 0.05517241379310346,
+                        "maxOfCross": 0.3,
+                        "maxOfCell": 0.1
+                      },
+                      "text": "CPU"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "gauges.layout._fallback.c2-grid.g2",
+                "type": "ui.stack",
+                "properties": {
+                  "align": "center",
+                  "direction": "vertical",
+                  "justify": "center"
+                },
+                "children": [
+                  {
+                    "id": "gauges.layout._fallback.c2-grid.g2.dial",
+                    "type": "ui.layer",
+                    "properties": {
+                      "fill": true
+                    },
+                    "children": [
+                      {
+                        "id": "gauges.layout._fallback.c2-grid.g2.dial.ring",
+                        "type": "ui.gauge",
+                        "properties": {
+                          "endAngle": 360,
+                          "fill": true,
+                          "level": 0.84,
+                          "startAngle": 0,
+                          "thickness": {
+                            "basis": 0.030344827586206904
+                          }
+                        },
+                        "children": [],
+                        "fallback": {
+                          "id": "gauges.layout._fallback.c2-grid.g2.dial.ringFallback",
+                          "type": "ui.range-bar",
+                          "properties": {
+                            "end": 0.84,
+                            "start": 0,
+                            "thickness": {
+                              "basis": 0.013793103448275865
+                            }
+                          },
+                          "children": []
+                        }
+                      },
+                      {
+                        "id": "gauges.layout._fallback.c2-grid.g2.dial.centre",
+                        "type": "ui.stack",
+                        "properties": {
+                          "align": "center",
+                          "direction": "horizontal",
+                          "justify": "center"
+                        },
+                        "children": [
+                          {
+                            "id": "gauges.layout._fallback.c2-grid.g2.dial.centre.icon",
+                            "type": "ui.image",
+                            "properties": {
+                              "size": {
+                                "basis": 0.09931034482758622,
+                                "maxOfCross": 0.36
+                              },
+                              "source": {
+                                "resourceId": "app.macro-deck.widget-icon.icon-pack.02d63447-0268-5863-b6c0-b07eac11022c",
+                                "contentHash": "sha256:516e05d4a994e42bd730622e380f5d82e953989895c205b8db22767f48209034",
+                                "mediaType": "image/png",
+                                "byteLength": 13155
+                              }
+                            },
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "gauges.layout._fallback.c2-grid.g2.reading",
+                    "type": "ui.stack",
+                    "properties": {
+                      "align": "baseline",
+                      "direction": "horizontal",
+                      "gap": {
+                        "basis": 0.00413793103448276
+                      },
+                      "justify": "center"
+                    },
+                    "children": [
+                      {
+                        "id": "gauges.layout._fallback.c2-grid.g2.reading.value",
+                        "type": "ui.text",
+                        "properties": {
+                          "maxLines": 1,
+                          "role": "primary",
+                          "size": {
+                            "basis": 0.06896551724137932,
+                            "maxOfCell": 0.14166666666666666
+                          },
+                          "text": "84",
+                          "weight": "semibold"
+                        },
+                        "children": []
+                      },
+                      {
+                        "id": "gauges.layout._fallback.c2-grid.g2.reading.unit",
+                        "type": "ui.text",
+                        "properties": {
+                          "maxLines": 1,
+                          "role": "secondary",
+                          "size": {
+                            "basis": 0.046896551724137946,
+                            "maxOfCell": 0.1
+                          },
+                          "text": "%",
+                          "weight": "semibold"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "gauges.layout._fallback.c2-grid.g2.name",
+                    "type": "ui.text",
+                    "properties": {
+                      "align": "center",
+                      "maxLines": 1,
+                      "role": "muted",
+                      "size": {
+                        "basis": 0.05517241379310346,
+                        "maxOfCross": 0.3,
+                        "maxOfCell": 0.1
+                      },
+                      "text": "RAM"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

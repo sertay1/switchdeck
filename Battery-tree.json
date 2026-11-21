@@ -1,0 +1,728 @@
+{
+  "tree": {
+    "root": {
+      "id": "battery",
+      "type": "ui.stack",
+      "properties": {
+        "direction": "vertical",
+        "gap": {
+          "basis": 0.02,
+          "maxOfCell": 0.025
+        },
+        "padding": {
+          "basis": 0.1,
+          "maxOfCell": 0.1
+        }
+      },
+      "children": [
+        {
+          "id": "battery.single",
+          "type": "ui.responsive",
+          "properties": {
+            "fill": true,
+            "variants": [
+              {
+                "minAspect": 1.6
+              },
+              {
+                "maxAspect": 0.6
+              }
+            ]
+          },
+          "children": [
+            {
+              "id": "battery.single.square",
+              "type": "ui.stack",
+              "properties": {
+                "align": "center",
+                "direction": "vertical",
+                "justify": "center"
+              },
+              "children": [
+                {
+                  "id": "battery.single.square.dial",
+                  "type": "ui.layer",
+                  "properties": {
+                    "fill": true
+                  },
+                  "children": [
+                    {
+                      "id": "battery.single.square.dial.ring",
+                      "type": "ui.gauge",
+                      "properties": {
+                        "endAngle": 360,
+                        "fill": true,
+                        "level": 1,
+                        "levelColor": "#34c759",
+                        "startAngle": 0,
+                        "thickness": {
+                          "basis": 0.06068965517241381
+                        }
+                      },
+                      "children": [],
+                      "fallback": {
+                        "id": "battery.single.square.dial.ringFallback",
+                        "type": "ui.range-bar",
+                        "properties": {
+                          "end": 1,
+                          "start": 0,
+                          "thickness": {
+                            "basis": 0.02758620689655173
+                          }
+                        },
+                        "children": []
+                      }
+                    },
+                    {
+                      "id": "battery.single.square.dial.centre",
+                      "type": "ui.stack",
+                      "properties": {
+                        "align": "center",
+                        "direction": "horizontal",
+                        "justify": "center"
+                      },
+                      "children": [
+                        {
+                          "id": "battery.single.square.dial.centre.glyph",
+                          "type": "ui.icon",
+                          "requiredComponentVersion": 2,
+                          "properties": {
+                            "icon": "device-laptop",
+                            "mainSize": {
+                              "basis": 0.19862068965517243,
+                              "maxOfCross": 0.36
+                            },
+                            "role": "primary",
+                            "size": {
+                              "basis": 0.19862068965517243,
+                              "maxOfCross": 0.36
+                            }
+                          },
+                          "children": [],
+                          "fallback": {
+                            "id": "battery.single.square.dial.centre.glyphFallback",
+                            "type": "ui.icon",
+                            "properties": {
+                              "icon": "device-desktop",
+                              "mainSize": {
+                                "basis": 0.19862068965517243,
+                                "maxOfCross": 0.36
+                              },
+                              "role": "primary",
+                              "size": {
+                                "basis": 0.19862068965517243,
+                                "maxOfCross": 0.36
+                              }
+                            },
+                            "children": []
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "battery.single.square.reading",
+                  "type": "ui.stack",
+                  "properties": {
+                    "align": "baseline",
+                    "direction": "horizontal",
+                    "gap": {
+                      "basis": 0.01
+                    },
+                    "justify": "center"
+                  },
+                  "children": [
+                    {
+                      "id": "battery.single.square.reading.value",
+                      "type": "ui.text",
+                      "properties": {
+                        "maxLines": 1,
+                        "role": "primary",
+                        "size": {
+                          "basis": 0.13793103448275865,
+                          "maxOfCell": 0.14166666666666666
+                        },
+                        "text": "100",
+                        "weight": "semibold"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "battery.single.square.reading.unit",
+                      "type": "ui.text",
+                      "properties": {
+                        "maxLines": 1,
+                        "role": "secondary",
+                        "size": {
+                          "basis": 0.09379310344827589,
+                          "maxOfCell": 0.08499999999999999
+                        },
+                        "text": "%",
+                        "weight": "semibold"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "battery.single.square.name",
+                  "type": "ui.text",
+                  "properties": {
+                    "align": "center",
+                    "maxLines": 1,
+                    "role": "muted",
+                    "size": {
+                      "basis": 0.11034482758620692,
+                      "maxOfCross": 0.3,
+                      "maxOfCell": 0.1
+                    },
+                    "text": "Test laptop"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "battery.single.wide",
+              "type": "ui.stack",
+              "properties": {
+                "align": "center",
+                "direction": "horizontal",
+                "gap": {
+                  "basis": 0.14
+                }
+              },
+              "children": [
+                {
+                  "id": "battery.single.wide.dial",
+                  "type": "ui.layer",
+                  "properties": {
+                    "mainSize": {
+                      "basis": 1
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "battery.single.wide.dial.ring",
+                      "type": "ui.gauge",
+                      "properties": {
+                        "endAngle": 360,
+                        "fill": true,
+                        "level": 1,
+                        "levelColor": "#34c759",
+                        "startAngle": 0,
+                        "thickness": {
+                          "basis": 0.0935
+                        }
+                      },
+                      "children": [],
+                      "fallback": {
+                        "id": "battery.single.wide.dial.ringFallback",
+                        "type": "ui.range-bar",
+                        "properties": {
+                          "end": 1,
+                          "start": 0,
+                          "thickness": {
+                            "basis": 0.0425
+                          }
+                        },
+                        "children": []
+                      }
+                    },
+                    {
+                      "id": "battery.single.wide.dial.centre",
+                      "type": "ui.stack",
+                      "properties": {
+                        "align": "center",
+                        "direction": "horizontal",
+                        "justify": "center"
+                      },
+                      "children": [
+                        {
+                          "id": "battery.single.wide.dial.centre.glyph",
+                          "type": "ui.icon",
+                          "requiredComponentVersion": 2,
+                          "properties": {
+                            "icon": "device-laptop",
+                            "mainSize": {
+                              "basis": 0.306,
+                              "maxOfCross": 0.36
+                            },
+                            "role": "primary",
+                            "size": {
+                              "basis": 0.306,
+                              "maxOfCross": 0.36
+                            }
+                          },
+                          "children": [],
+                          "fallback": {
+                            "id": "battery.single.wide.dial.centre.glyphFallback",
+                            "type": "ui.icon",
+                            "properties": {
+                              "icon": "device-desktop",
+                              "mainSize": {
+                                "basis": 0.306,
+                                "maxOfCross": 0.36
+                              },
+                              "role": "primary",
+                              "size": {
+                                "basis": 0.306,
+                                "maxOfCross": 0.36
+                              }
+                            },
+                            "children": []
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "battery.single.wide.details",
+                  "type": "ui.stack",
+                  "properties": {
+                    "align": "start",
+                    "direction": "vertical",
+                    "fill": true,
+                    "gap": {
+                      "basis": 0.03
+                    },
+                    "justify": "center"
+                  },
+                  "children": [
+                    {
+                      "id": "battery.single.wide.details.name",
+                      "type": "ui.text",
+                      "properties": {
+                        "align": "start",
+                        "maxLines": 1,
+                        "role": "primary",
+                        "size": {
+                          "basis": 0.17,
+                          "maxOfCell": 0.125
+                        },
+                        "text": "Test laptop",
+                        "weight": "semibold"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "battery.single.wide.details.reading",
+                      "type": "ui.stack",
+                      "properties": {
+                        "align": "baseline",
+                        "direction": "horizontal",
+                        "gap": {
+                          "basis": 0.01
+                        },
+                        "justify": "start"
+                      },
+                      "children": [
+                        {
+                          "id": "battery.single.wide.details.reading.value",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "primary",
+                            "size": {
+                              "basis": 0.36,
+                              "maxOfCell": 0.25
+                            },
+                            "text": "100",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        },
+                        {
+                          "id": "battery.single.wide.details.reading.unit",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "secondary",
+                            "size": {
+                              "basis": 0.216,
+                              "maxOfCell": 0.15
+                            },
+                            "text": "%",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "battery.single.wide.details.state",
+                      "type": "ui.text",
+                      "properties": {
+                        "align": "start",
+                        "maxLines": 1,
+                        "role": "muted",
+                        "size": {
+                          "basis": 0.15,
+                          "maxOfCell": 0.10833333333333334
+                        },
+                        "text": {
+                          "$localized": {
+                            "scope": "macrodeck.app",
+                            "key": "Widgets.Battery.State.Full"
+                          }
+                        }
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "battery.single.tall",
+              "type": "ui.stack",
+              "properties": {
+                "align": "center",
+                "direction": "vertical",
+                "gap": {
+                  "basis": 0.1
+                },
+                "justify": "center"
+              },
+              "children": [
+                {
+                  "id": "battery.single.tall.dial",
+                  "type": "ui.layer",
+                  "properties": {
+                    "mainSize": {
+                      "basis": 0.9
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "battery.single.tall.dial.ring",
+                      "type": "ui.gauge",
+                      "properties": {
+                        "endAngle": 360,
+                        "fill": true,
+                        "level": 1,
+                        "levelColor": "#34c759",
+                        "startAngle": 0,
+                        "thickness": {
+                          "basis": 0.08800000000000001
+                        }
+                      },
+                      "children": [],
+                      "fallback": {
+                        "id": "battery.single.tall.dial.ringFallback",
+                        "type": "ui.range-bar",
+                        "properties": {
+                          "end": 1,
+                          "start": 0,
+                          "thickness": {
+                            "basis": 0.04000000000000001
+                          }
+                        },
+                        "children": []
+                      }
+                    },
+                    {
+                      "id": "battery.single.tall.dial.centre",
+                      "type": "ui.stack",
+                      "properties": {
+                        "align": "center",
+                        "direction": "horizontal",
+                        "justify": "center"
+                      },
+                      "children": [
+                        {
+                          "id": "battery.single.tall.dial.centre.glyph",
+                          "type": "ui.icon",
+                          "requiredComponentVersion": 2,
+                          "properties": {
+                            "icon": "device-laptop",
+                            "mainSize": {
+                              "basis": 0.288,
+                              "maxOfCross": 0.36
+                            },
+                            "role": "primary",
+                            "size": {
+                              "basis": 0.288,
+                              "maxOfCross": 0.36
+                            }
+                          },
+                          "children": [],
+                          "fallback": {
+                            "id": "battery.single.tall.dial.centre.glyphFallback",
+                            "type": "ui.icon",
+                            "properties": {
+                              "icon": "device-desktop",
+                              "mainSize": {
+                                "basis": 0.288,
+                                "maxOfCross": 0.36
+                              },
+                              "role": "primary",
+                              "size": {
+                                "basis": 0.288,
+                                "maxOfCross": 0.36
+                              }
+                            },
+                            "children": []
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "battery.single.tall.details",
+                  "type": "ui.stack",
+                  "properties": {
+                    "align": "center",
+                    "direction": "vertical",
+                    "gap": {
+                      "basis": 0.03
+                    },
+                    "justify": "center"
+                  },
+                  "children": [
+                    {
+                      "id": "battery.single.tall.details.name",
+                      "type": "ui.text",
+                      "properties": {
+                        "align": "center",
+                        "maxLines": 1,
+                        "role": "primary",
+                        "size": {
+                          "basis": 0.15,
+                          "maxOfCell": 0.125
+                        },
+                        "text": "Test laptop",
+                        "weight": "semibold"
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "battery.single.tall.details.reading",
+                      "type": "ui.stack",
+                      "properties": {
+                        "align": "baseline",
+                        "direction": "horizontal",
+                        "gap": {
+                          "basis": 0.01
+                        },
+                        "justify": "center"
+                      },
+                      "children": [
+                        {
+                          "id": "battery.single.tall.details.reading.value",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "primary",
+                            "size": {
+                              "basis": 0.3,
+                              "maxOfCell": 0.25
+                            },
+                            "text": "100",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        },
+                        {
+                          "id": "battery.single.tall.details.reading.unit",
+                          "type": "ui.text",
+                          "properties": {
+                            "maxLines": 1,
+                            "role": "secondary",
+                            "size": {
+                              "basis": 0.18,
+                              "maxOfCell": 0.15
+                            },
+                            "text": "%",
+                            "weight": "semibold"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "battery.single.tall.details.state",
+                      "type": "ui.text",
+                      "properties": {
+                        "align": "center",
+                        "maxLines": 1,
+                        "role": "muted",
+                        "size": {
+                          "basis": 0.12,
+                          "maxOfCell": 0.10833333333333334
+                        },
+                        "text": {
+                          "$localized": {
+                            "scope": "macrodeck.app",
+                            "key": "Widgets.Battery.State.Full"
+                          }
+                        }
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "fallback": {
+            "id": "battery.single._fallback.square",
+            "type": "ui.stack",
+            "properties": {
+              "align": "center",
+              "direction": "vertical",
+              "justify": "center"
+            },
+            "children": [
+              {
+                "id": "battery.single._fallback.square.dial",
+                "type": "ui.layer",
+                "properties": {
+                  "fill": true
+                },
+                "children": [
+                  {
+                    "id": "battery.single._fallback.square.dial.ring",
+                    "type": "ui.gauge",
+                    "properties": {
+                      "endAngle": 360,
+                      "fill": true,
+                      "level": 1,
+                      "levelColor": "#34c759",
+                      "startAngle": 0,
+                      "thickness": {
+                        "basis": 0.06068965517241381
+                      }
+                    },
+                    "children": [],
+                    "fallback": {
+                      "id": "battery.single._fallback.square.dial.ringFallback",
+                      "type": "ui.range-bar",
+                      "properties": {
+                        "end": 1,
+                        "start": 0,
+                        "thickness": {
+                          "basis": 0.02758620689655173
+                        }
+                      },
+                      "children": []
+                    }
+                  },
+                  {
+                    "id": "battery.single._fallback.square.dial.centre",
+                    "type": "ui.stack",
+                    "properties": {
+                      "align": "center",
+                      "direction": "horizontal",
+                      "justify": "center"
+                    },
+                    "children": [
+                      {
+                        "id": "battery.single._fallback.square.dial.centre.glyph",
+                        "type": "ui.icon",
+                        "requiredComponentVersion": 2,
+                        "properties": {
+                          "icon": "device-laptop",
+                          "mainSize": {
+                            "basis": 0.19862068965517243,
+                            "maxOfCross": 0.36
+                          },
+                          "role": "primary",
+                          "size": {
+                            "basis": 0.19862068965517243,
+                            "maxOfCross": 0.36
+                          }
+                        },
+                        "children": [],
+                        "fallback": {
+                          "id": "battery.single._fallback.square.dial.centre.glyphFallback",
+                          "type": "ui.icon",
+                          "properties": {
+                            "icon": "device-desktop",
+                            "mainSize": {
+                              "basis": 0.19862068965517243,
+                              "maxOfCross": 0.36
+                            },
+                            "role": "primary",
+                            "size": {
+                              "basis": 0.19862068965517243,
+                              "maxOfCross": 0.36
+                            }
+                          },
+                          "children": []
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "battery.single._fallback.square.reading",
+                "type": "ui.stack",
+                "properties": {
+                  "align": "baseline",
+                  "direction": "horizontal",
+                  "gap": {
+                    "basis": 0.01
+                  },
+                  "justify": "center"
+                },
+                "children": [
+                  {
+                    "id": "battery.single._fallback.square.reading.value",
+                    "type": "ui.text",
+                    "properties": {
+                      "maxLines": 1,
+                      "role": "primary",
+                      "size": {
+                        "basis": 0.13793103448275865,
+                        "maxOfCell": 0.14166666666666666
+                      },
+                      "text": "100",
+                      "weight": "semibold"
+                    },
+                    "children": []
+                  },
+                  {
+                    "id": "battery.single._fallback.square.reading.unit",
+                    "type": "ui.text",
+                    "properties": {
+                      "maxLines": 1,
+                      "role": "secondary",
+                      "size": {
+                        "basis": 0.09379310344827589,
+                        "maxOfCell": 0.08499999999999999
+                      },
+                      "text": "%",
+                      "weight": "semibold"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "battery.single._fallback.square.name",
+                "type": "ui.text",
+                "properties": {
+                  "align": "center",
+                  "maxLines": 1,
+                  "role": "muted",
+                  "size": {
+                    "basis": 0.11034482758620692,
+                    "maxOfCross": 0.3,
+                    "maxOfCell": 0.1
+                  },
+                  "text": "Test laptop"
+                },
+                "children": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

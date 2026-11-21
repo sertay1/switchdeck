@@ -1,0 +1,12 @@
+{
+  "culture": "tr-TR",
+  "translations": {
+    "macrodeck.app:Variables.Format.ValueWithUnit": "{value} {unit}",
+    "macrodeck.app:Widgets.Battery.State.Full": "Tamamen şarj oldu",
+    "macrodeck.app:Widgets.Clock.UpdateRequired": "Saati göstermek için bu istemciyi güncelleyin.",
+    "macrodeck.app:Widgets.MusicPlayer.NothingPlaying": "Hiçbir şey çalmıyor",
+    "macrodeck.app:Widgets.Weather.Condition.Overcast": "Kapalı",
+    "macrodeck.app:Widgets.Weather.HighLow": "Y: {high}° D: {low}°",
+    "macrodeck.app:Widgets.Weather.TemperatureValue": "{value}°"
+  }
+}
