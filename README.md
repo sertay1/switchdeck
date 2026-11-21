@@ -35,14 +35,17 @@
 
 ## 📸 Screenshots / Ekran Görüntüleri
 
-<p align="center">
-  <a href="docs/images/connection-and-server.jpg"><img src="docs/images/connection-and-server.jpg" alt="Connection and pairing settings / Bağlantı ve eşleştirme" width="400"></a>
-  <a href="docs/images/appearance-and-theme.jpg"><img src="docs/images/appearance-and-theme.jpg" alt="Language and theme settings / Dil ve tema" width="400"></a>
-</p>
+### Connection & Server / Bağlantı ve Sunucu
 
-<p align="center">
-  <a href="docs/images/about.jpg"><img src="docs/images/about.jpg" alt="About SwitchDeck / SwitchDeck hakkında" width="400"></a>
-</p>
+![SwitchDeck connection and pairing settings / SwitchDeck bağlantı ve eşleştirme ayarları](docs/images/connection-and-server.jpg)
+
+### Appearance & Theme / Görünüm ve Tema
+
+![SwitchDeck language, theme, and status bar settings / SwitchDeck dil, tema ve durum çubuğu ayarları](docs/images/appearance-and-theme.jpg)
+
+### About / Hakkında
+
+![SwitchDeck About screen / SwitchDeck Hakkında ekranı](docs/images/about.jpg)
 
 ---
 
@@ -67,7 +70,7 @@ SwitchDeck is a Nintendo Switch homebrew app that shows your Macro Deck profiles
 
 ### 🚀 Installation
 
-1. Download the **SD ZIP** from [GitHub Releases](https://github.com/sertay1/switchdeck/releases). Copy the included `switch` folder to the root of your SD card. If you are using the repository copy, the same layout is under `SD_Karta_Atilacak`.
+1. Download the **SD ZIP** from [GitHub Releases](https://github.com/sertay1/switchdeck/releases). Copy the included `switch` folder to the root of your SD card.
 2. Open **SwitchDeck** from the Homebrew Menu. The executable should be at `sdmc:/switch/SwitchDeck/SwitchDeck.nro`.
 3. Open **Settings → Connection & Server**. Select **Search Network**, or enter the PC’s local IP address and the server port manually. Macro Deck 3 uses port `8193` by default.
 4. On the PC, open **Devices → Add Device** in Macro Deck and generate a six-digit pairing code. Enter it on the Switch and select **Connect Now**.
@@ -117,7 +120,7 @@ SwitchDeck, Macro Deck profillerinizi ve widget’larınızı Nintendo Switch ek
 
 ### 🚀 Kurulum
 
-1. [GitHub Sürümler](https://github.com/sertay1/switchdeck/releases) sayfasından **SD ZIP** paketini indirin. İçindeki `switch` klasörünü SD kartın köküne kopyalayın. Depodaki kopyayı kullanıyorsanız aynı dizin yapısı `SD_Karta_Atilacak` altında bulunur.
+1. [GitHub Sürümler](https://github.com/sertay1/switchdeck/releases) sayfasından **SD ZIP** paketini indirin. İçindeki `switch` klasörünü SD kartın köküne kopyalayın.
 2. Homebrew Menu’den **SwitchDeck**’i açın. Uygulama dosyasının yolu `sdmc:/switch/SwitchDeck/SwitchDeck.nro` olmalı.
 3. **Ayarlar → Bağlantı & Sunucu** bölümünü açın. **Ağda Ara** düğmesini kullanın veya bilgisayarın yerel IP adresini ve sunucu portunu elle girin. Macro Deck 3’ün varsayılan portu `8193`.
 4. Bilgisayarda Macro Deck’in **Cihazlar → Cihaz Ekle** bölümünden altı haneli eşleştirme kodu alın. Kodu Switch’e girip **Şimdi Bağlan** düğmesine basın.
@@ -143,3 +146,23 @@ SwitchDeck eşleştirmeyi SD kartta saklar. Sunucu adresini veya portu değişti
 devkitPro, devkitA64, libnx ve [Makefile](Makefile) içindeki Switch portlibs bağımlılıklarını kurun. devkitPro kabuğunda `make` komutunu çalıştırarak `SwitchDeck.nro` dosyasını oluşturun. GitHub isteklerinde TLS doğrulaması için kullanılan [CA sertifika paketi](romfs/tls-ca-bundle.pem) NRO’ya gömülür. Ayrıntılar için [regresyon testi talimatlarına](tests/README.txt) bakın.
 
 [Yukarı dön](#switchdeck-top) · [English](#en-setup-and-usage-guide)
+
+---
+
+## 🛒 Homebrew App Store
+
+<p align="center">
+  <a href="https://hb-app.store/switch">
+    <img src="docs/images/hbappstore.png" alt="Homebrew App Store for Nintendo Switch" width="250">
+  </a><br>
+  <a href="https://hb-app.store/switch">Browse the Switch homebrew catalog / Switch homebrew kataloğuna göz at</a>
+</p>
+
+## 🔗 Contact / İletişim
+
+<p align="center">
+  <a href="https://linktr.ee/yamanx">
+    <img src="romfs/contact_qr.png" alt="SertAy Linktree QR code / SertAy Linktree QR kodu" width="160">
+  </a><br>
+  <a href="https://linktr.ee/yamanx"><strong>SertAy · All Links / Tüm Linkler</strong></a>
+</p>
