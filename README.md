@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-  <strong>Turn your Nintendo Switch into a Stream Deck control panel.</strong><br><br>
-  <strong>Nintendo Switch’ini Stream Deck kontrol paneline dönüştür.</strong>
+  <strong><b>(EN)</b> Turn your Nintendo Switch into a Stream Deck control panel.</strong><br><br>
+  <strong><b>(TR)</b> Nintendo Switch’ini Stream Deck kontrol paneline dönüştür.</strong>
 </p>
 
 <p align="center">
@@ -26,9 +26,7 @@
 
 <a name="en-setup-and-usage-guide"></a>
 
-## EN
-
-### What SwitchDeck does
+## EN - What SwitchDeck does
 
 Open your PC’s **Macro Deck 3** pages on the Switch. Run macros, change tracks, and adjust volume while you play or stream.
 
@@ -111,9 +109,7 @@ Install devkitPro, devkitA64, libnx, and the Switch portlibs listed in the [Make
 
 <a name="tr-kurulum-ve-kullanim-rehberi"></a>
 
-## TR
-
-### SwitchDeck ne işe yarar?
+## TR - SwitchDeck ne işe yarar?
 
 Bilgisayarındaki **Macro Deck 3** sayfalarını Switch’te aç. Oyun veya yayın sırasında makroları çalıştır, parçayı değiştir ve sesi ayarla.
 
