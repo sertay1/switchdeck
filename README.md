@@ -26,6 +26,8 @@
 
 <a name="en-setup-and-usage-guide"></a>
 
+## EN
+
 ### What SwitchDeck does
 
 Open your PC’s **Macro Deck 3** pages on the Switch. Run macros, change tracks, and adjust volume while you play or stream.
@@ -108,6 +110,8 @@ Install devkitPro, devkitA64, libnx, and the Switch portlibs listed in the [Make
 ---
 
 <a name="tr-kurulum-ve-kullanim-rehberi"></a>
+
+## TR
 
 ### SwitchDeck ne işe yarar?
 
