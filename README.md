@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-  <strong>Nintendo Switch’ini Stream Deck kontrol paneline dönüştür.</strong><br><br>
-  <strong>Turn your Nintendo Switch into a Stream Deck control panel.</strong>
+  <strong>Turn your Nintendo Switch into a Stream Deck control panel.</strong><br><br>
+  <strong>Nintendo Switch’ini Stream Deck kontrol paneline dönüştür.</strong>
 </p>
 
 <p align="center">
