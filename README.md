@@ -11,8 +11,8 @@
 
 <div align="center">
   <p><strong>by SertAy</strong></p>
-  <p><strong>(EN)</strong> Turn your Nintendo Switch into a Macro Deck control panel.</p>
-  <p><strong>(TR)</strong> Nintendo Switch’inizi Macro Deck kontrol paneline dönüştürün.</p>
+  <p><strong>(EN)</strong> Turn your Nintendo Switch into a Streamdeck panel.</p>
+  <p><strong>(TR)</strong> Nintendo Switch’inizi Streamdeck kontrol paneline dönüştürün.</p>
   <p>
     <img src="https://img.shields.io/badge/Macro%20Deck-3-5865F2" alt="Macro Deck 3">
     <img src="https://img.shields.io/badge/Platform-Nintendo%20Switch-E60012" alt="Nintendo Switch">
