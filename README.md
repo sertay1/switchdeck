@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/images/switchdeck-setup.jpg" alt="Nintendo Switch OLED running SwitchDeck on a gaming desk" width="740">
+  <img src="docs/images/switchdeck-setup.png" alt="Nintendo Switch OLED running SwitchDeck on a gaming desk" width="740">
 </p>
 
 <a name="en-setup-and-usage-guide"></a>
